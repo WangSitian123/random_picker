@@ -1,0 +1,88 @@
+:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.app {
+  width: 100%;
+  max-width: 640px;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.sub {
+  margin: 0.5rem 0 1rem;
+  color: var(--muted);
+}
+
+.pick-btn {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.9rem 1rem;
+  min-height: 48px;
+  cursor: pointer;
+}
+
+.pick-btn:hover {
+  background: var(--primary-hover);
+}
+
+.result {
+  margin-top: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  background: #fafafa;
+}
+
+.placeholder {
+  margin: 0;
+  color: var(--muted);
+}
+
+.meta {
+  margin: 0.35rem 0;
+  line-height: 1.6;
+}
+
+.meta strong {
+  display: inline-block;
+  min-width: 4.2em;
+}
+
+@media (min-width: 768px) {
+  .app {
+    padding: 1.5rem;
+  }
+}
