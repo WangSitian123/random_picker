@@ -51,6 +51,7 @@ function addCreatorFromLine(line) {
   "公众号|一席|演讲",
   "公众号|知识分子|科研生活杂文",
   "公众号|追问nextquestion|脑科学 + 人工智能论文解读",
+  "公众号|脑机观澜|脑机接口产业动态",
   "B站|本子在隔壁|心理学",
   "B站|智能路障|深度思考",
   "B站|姜Dora在此|访谈",
@@ -88,8 +89,9 @@ function addCreatorFromLine(line) {
   "B站|北美运动学博士Bruce_PhD|运动学科普",
   "B站|帅你一脸毛蛋|外在提升",
   "B站|小超人在巴黎X|皮肤",
-  
-
+  "B站|妙招姐|生活小技巧",
+  "B站|庞颖|辩论",
+  "B站|阿詹|辩论",
 ].forEach(addCreatorFromLine);
 
 const pickBtn = document.getElementById("pickBtn");
